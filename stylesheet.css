@@ -65,8 +65,58 @@ a {
 /* Sidebar/left column */
 .side {
   flex: 30%;
-  background-color: #f1f1f1;
+  background-color: #d3d3d388;
   padding: 20px;
+}
+
+.logo-nama:hover {
+  color: #ff8b1f;
+  text-decoration: none;
+}
+
+.side h1{
+  text-align: center;
+  font-family: "Archivo Black", sans-serif;
+}
+
+.logo-nama-lengkap:hover{
+  color: #ff8b1f;
+  text-decoration: none;
+}
+  
+.zoom-effect {  
+  position: relative;
+  width: 200px;
+  height: 268px;
+  margin: auto;
+  overflow: hidden;  
+}
+ 
+.kotak {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+ 
+.kotak img {
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  width: 200px;
+  height: 268px;
+  margin: auto;
+}
+ 
+.zoom-effect:hover .kotak img {
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+}
+
+.side p {
+  text-align: justify;
+}
+.side p:hover {
+  color: #ff8b1f;
+  text-decoration: none;
 }
 
 /* Main column */
