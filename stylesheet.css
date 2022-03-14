@@ -64,9 +64,23 @@ a {
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
 .side {
+  overflow: hidden;
+  position: relative;
   flex: 30%;
-  background-color: #d3d3d388;
   padding: 20px;
+}
+
+.side-bg {
+  opacity: 0.4;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: auto;
+  height: 100%;
+}
+
+.side-content {
+  position: relative;
 }
 
 .logo-nama:hover {
