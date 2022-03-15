@@ -204,6 +204,9 @@ a {
   .navbar {
     flex-direction: column;
   }
+  .slide {
+    width: 100%;
+  }
 }
 
 /* animation header awal*/
@@ -240,3 +243,105 @@ a {
   }
 }
 /* animation header akhir*/
+
+/*awal code slider untuk gambar SpaceX*/
+.slide {
+  max-width: auto;
+  height: 300px;
+  width: 1000px;
+  position: relative;
+  margin-bottom :50px;
+}
+
+.slide1, .slide2, .slide3 {
+  position:absolute;
+  width: 100%;
+  height: 100%;
+}
+.slide1 {
+  background: url(spacex.jpg) no-repeat center;
+  background-size: cover;
+  animation: fade 8s infinite;
+  -webkit-animation: fade 8s infinite;
+}
+.slide2 {
+  background: url(spacex2.jpg) no-repeat center;
+  background-size: cover;
+  animation: fade2 8s infinite;
+  -webkit-animation: fade2 8s infinite;
+}
+.slide3 {
+  background: url(spacex3.jpg) no-repeat center;
+  background-size: cover;
+  animation: fade3 8s infinite;
+  -webkit-animation: fade3 8s infinite;
+}
+@keyframes fade {
+  0%{ opacity: 1;}
+  33.333%{ opacity: 0;}
+  66.666%{ opacity: 0;}
+  100%{ opacity: 1;}
+}
+@keyframes fade2 {
+  0%{ opacity: 0;}
+  33.333%{ opacity: 1;}
+  66.666%{ opacity: 0;}
+  100%{ opacity: 0;}
+}
+@keyframes fade3 {
+  0%{ opacity: 0;}
+  33.333%{ opacity: 0;}
+  66.666%{ opacity: 1;}
+  100%{ opacity: 0;}
+}
+/* akhir slider untuk gambar SpaceX */
+.slide-1 { /*awal slide untuk tesla */
+  max-width: auto;
+  height: 300px;
+  width: 1000px;
+  position: relative;
+  margin: 50px 0;
+}
+
+.tesla1, .tesla2, .tesla3 {
+  position:absolute;
+  width: 100%;
+  height: 100%;
+}
+.tesla1 {
+  background: url(Tesla1.jpg) no-repeat center;
+  background-size: cover;
+  animation: fade4 8s infinite;
+  -webkit-animation: fade 8s infinite;
+}
+.tesla2 {
+  background: url(Tesla2.jpg) no-repeat center;
+  background-size: cover;
+  animation: fade5 8s infinite;
+  -webkit-animation: fade2 8s infinite;
+}
+.tesla3 {
+  background: url(Tesla3.jpg) no-repeat center;
+  background-size: cover;
+  animation: fade6 8s infinite;
+  -webkit-animation: fade3 8s infinite;
+}
+@keyframes fade4 {
+  0%{ opacity: 1;}
+  33.333%{ opacity: 0;}
+  66.666%{ opacity: 0;}
+  100%{ opacity: 1;}
+}
+@keyframes fade5 {
+  0%{ opacity: 0;}
+  33.333%{ opacity: 1;}
+  66.666%{ opacity: 0;}
+  100%{ opacity: 0;}
+}
+@keyframes fade6 {
+  0%{ opacity: 0;}
+  33.333%{ opacity: 0;}
+  66.666%{ opacity: 1;}
+  100%{ opacity: 0;}
+}
+/* akhir slide untuk tesla */
