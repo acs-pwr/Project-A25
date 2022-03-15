@@ -19,6 +19,8 @@ a {
   background-color: black;
 }
 
+
+
 .gradient-text {
   font-size: 70px;
   font-family: "Archivo Black", sans-serif;
@@ -33,6 +35,11 @@ a {
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
+  /* animation header*/
+  animation: fadein 2s;
+  -moz-animation: fadein 2s; /* Firefox */
+  -webkit-animation: fadein 2s; /* Safari and Chrome */
+  -o-animation: fadein 2s; /* Opera */
 }
 
 /* Style the top navigation bar */
@@ -47,6 +54,7 @@ a {
   text-decoration: none;
   text-align: center;
   font-family: "Archivo Black", sans-serif;
+  border-radius: 5px;
 }
 
 /* Change color on hover */
@@ -197,3 +205,38 @@ a {
     flex-direction: column;
   }
 }
+
+/* animation header awal*/
+@keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-moz-keyframes fadein { /* Firefox */
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-o-keyframes fadein { /* Opera */
+  from {
+      opacity:0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+/* animation header akhir*/
