@@ -16,7 +16,8 @@ a {
 .header {
   padding: 20px 0 0 0;
   text-align: center;
-  background-color: black;
+  background: url("bintang1.jpg");
+  background-size: cover;
 }
 
 
@@ -79,12 +80,15 @@ a {
 }
 
 .side-bg {
+  background: url("spacex4.jpg");
+  background-size: cover;
   opacity: 0.4;
   position: absolute;
   left: 0;
   top: 0;
   width: 700px;
   height: 100%;
+  padding-left: 100%;
 }
 
 .side-content {
@@ -159,7 +163,7 @@ a {
 .footer {
   height: 130px;
   padding: 20px;
-  background-image: url(./langit.jpg);
+  background-image: url("bintang1.jpg");
   background-size: cover;
 }
 
@@ -188,9 +192,36 @@ a {
   padding-bottom: 6px;
   list-style-type: none;
 }
-
-.footer-list li a {
+.btn {
+  padding: 12px 24px;
   color: white;
+  display: inline-block;
+  opacity: 0.8;
+}
+/* Tambahkan CSS untuk instagram */
+.instagram {
+  background-color: indigo;
+  margin-right: 10px;
+}
+/* Tambahkan CSS untuk facebook */
+.facebook {
+  background-color: #3b5998;
+  margin-right: 10px;
+}
+/* Tambahkan CSS untuk twitter */
+.twitter {
+  background-color: #55acee;
+}
+/* Tambahkan CSS untuk btn-wrapper */
+.btn-wrapper {
+  margin: 20px 0px;
+}
+/* Tambahkan CSS untuk tag <p> didalam class btn-wrapper */
+.btn-wrapper p {
+  margin: 10px 0px;
+}
+.fa {
+  margin-right: 5px;
 }
 
 .li-item:hover a {
@@ -259,19 +290,19 @@ a {
   height: 100%;
 }
 .slide1 {
-  background: url(spacex.jpg) no-repeat center;
+  background: url("spacex.jpg") no-repeat center;
   background-size: cover;
   animation: fade 8s infinite;
   -webkit-animation: fade 8s infinite;
 }
 .slide2 {
-  background: url(spacex2.jpg) no-repeat center;
+  background: url("spacex2.jpg") no-repeat center;
   background-size: cover;
   animation: fade2 8s infinite;
   -webkit-animation: fade2 8s infinite;
 }
 .slide3 {
-  background: url(spacex3.jpg) no-repeat center;
+  background: url("spacex3.jpg") no-repeat center;
   background-size: cover;
   animation: fade3 8s infinite;
   -webkit-animation: fade3 8s infinite;
@@ -309,19 +340,19 @@ a {
   height: 100%;
 }
 .tesla1 {
-  background: url(Tesla1.jpg) no-repeat center;
+  background: url("Tesla1.jpg") no-repeat center;
   background-size: cover;
   animation: fade4 8s infinite;
   -webkit-animation: fade 8s infinite;
 }
 .tesla2 {
-  background: url(Tesla2.jpg) no-repeat center;
+  background: url("Tesla2.jpg") no-repeat center;
   background-size: cover;
   animation: fade5 8s infinite;
   -webkit-animation: fade2 8s infinite;
 }
 .tesla3 {
-  background: url(Tesla3.jpg) no-repeat center;
+  background: url("Tesla3.jpg") no-repeat center;
   background-size: cover;
   animation: fade6 8s infinite;
   -webkit-animation: fade3 8s infinite;
@@ -345,3 +376,102 @@ a {
   100%{ opacity: 0;}
 }
 /* akhir slide untuk tesla */
+.slide-2 { /*awal slide untuk the boring company */
+  max-width: auto;
+  height: 300px;
+  width: 1000px;
+  position: relative;
+  margin: 50px 0;
+}
+
+.boring1, .boring2, .boring3 {
+  position:absolute;
+  width: 100%;
+  height: 100%;
+}
+.boring1 {
+  background: url("boring 1.jpg") no-repeat center;
+  background-size: cover;
+  animation: fade7 8s infinite;
+  -webkit-animation: fade 8s infinite;
+}
+.boring2 {
+  background: url("boring 2.jpg") no-repeat center;
+  background-size: cover;
+  animation: fade8 8s infinite;
+  -webkit-animation: fade2 8s infinite;
+}
+.boring3 {
+  background: url("boring 3.jpg") no-repeat center;
+  background-size: cover;
+  animation: fade9 8s infinite;
+  -webkit-animation: fade3 8s infinite;
+}
+@keyframes fade7 {
+  0%{ opacity: 1;}
+  33.333%{ opacity: 0;}
+  66.666%{ opacity: 0;}
+  100%{ opacity: 1;}
+}
+@keyframes fade8 {
+  0%{ opacity: 0;}
+  33.333%{ opacity: 1;}
+  66.666%{ opacity: 0;}
+  100%{ opacity: 0;}
+}
+@keyframes fade9 {
+  0%{ opacity: 0;}
+  33.333%{ opacity: 0;}
+  66.666%{ opacity: 1;}
+  100%{ opacity: 0;}
+}
+/* akhir slide untuk the boring company */
+.slide-3 { /*awal slide untuk musk foundation */
+  max-width: auto;
+  height: 250px;
+  width: 1000px;
+  position: relative;
+  margin: 50px 0;
+}
+.musk1, .musk2, .musk3 {
+  position:absolute;
+  width: 100%;
+  height: 100%;
+}
+.musk1 {
+  background: url("musk 1.jpg") no-repeat center;
+  background-size: cover;
+  animation: fade10 8s infinite;
+  -webkit-animation: fade 8s infinite;
+}
+.musk2 {
+  background: url("musk 2.jpg") no-repeat center;
+  background-size: cover;
+  animation: fade11 8s infinite;
+  -webkit-animation: fade2 8s infinite;
+}
+.musk3 {
+  background: url("musk 3.jpg") no-repeat center;
+  background-size: cover;
+  animation: fade12 8s infinite;
+  -webkit-animation: fade3 8s infinite;
+}
+@keyframes fade10 {
+  0%{ opacity: 1;}
+  33.333%{ opacity: 0;}
+  66.666%{ opacity: 0;}
+  100%{ opacity: 1;}
+}
+@keyframes fade11 {
+  0%{ opacity: 0;}
+  33.333%{ opacity: 1;}
+  66.666%{ opacity: 0;}
+  100%{ opacity: 0;}
+}
+@keyframes fade12 {
+  0%{ opacity: 0;}
+  33.333%{ opacity: 1;}
+  66.666%{ opacity: 0;}
+  100%{ opacity: 0;}
+}
+/*akhir slide untuk musk foundation */
