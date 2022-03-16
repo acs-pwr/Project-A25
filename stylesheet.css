@@ -6,6 +6,7 @@
 body {
   font-family: Arial;
   margin: 0;
+  position: absolute;
 }
 
 a {
@@ -229,14 +230,29 @@ a {
   font-style: italic;
 }
 
+.footer-list-a {
+  float: right;
+  display: none;
+}
+
+.footer-list-a a{
+  width: 60px;
+}
+
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 743px) {
   .row,
   .navbar {
     flex-direction: column;
   }
   .slide {
     width: 100%;
+  }
+  .footer-list {
+    display: none;
+  }
+  .footer-list-a{
+    display: block;
   }
 }
 
@@ -279,14 +295,14 @@ a {
 .slide {
   max-width: auto;
   height: 300px;
-  width: 1000px;
+  width: 700px;
   position: relative;
   margin-bottom :50px;
 }
 
 .slide1, .slide2, .slide3 {
   position:absolute;
-  width: 100%;
+  width: 700px;
   height: 100%;
 }
 .slide1 {
@@ -329,14 +345,14 @@ a {
 .slide-1 { /*awal slide untuk tesla */
   max-width: auto;
   height: 300px;
-  width: 1000px;
+  width: 700px;
   position: relative;
   margin: 50px 0;
 }
 
 .tesla1, .tesla2, .tesla3 {
   position:absolute;
-  width: 100%;
+  width: 700px;
   height: 100%;
 }
 .tesla1 {
@@ -379,14 +395,14 @@ a {
 .slide-2 { /*awal slide untuk the boring company */
   max-width: auto;
   height: 300px;
-  width: 1000px;
+  width: 700px;
   position: relative;
   margin: 50px 0;
 }
 
 .boring1, .boring2, .boring3 {
   position:absolute;
-  width: 100%;
+  width: 700px;
   height: 100%;
 }
 .boring1 {
@@ -429,13 +445,13 @@ a {
 .slide-3 { /*awal slide untuk musk foundation */
   max-width: auto;
   height: 250px;
-  width: 1000px;
+  width: 700px;
   position: relative;
   margin: 50px 0;
 }
 .musk1, .musk2, .musk3 {
   position:absolute;
-  width: 100%;
+  width: 700px;
   height: 100%;
 }
 .musk1 {
@@ -473,5 +489,9 @@ a {
   33.333%{ opacity: 1;}
   66.666%{ opacity: 0;}
   100%{ opacity: 0;}
+}
+
+p {
+  text-align: justify;
 }
 /*akhir slide untuk musk foundation */
